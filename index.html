@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sancthus Nancy!</title>
+    <!-- Google Fonts for cute, rounded typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Decor (Floating circles) -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    <div class="bg-shape shape3"></div>
+    <div class="bg-shape shape4"></div>
+
+    <!-- COUNTDOWN VIEW -->
+    <div id="countdown-view" class="view-container active">
+        <div class="glass-card">
+            <h1 class="title">A Special Surprise For...</h1>
+            <h2 class="name-highlight">babb ❤️</h2>
+            <p class="subtitle">Unlocking in:</p>
+            
+            <div class="countdown-timer">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+
+            <button id="skip-btn" class="skip-link">I can't wait! (Skip to Surprise)</button>
+        </div>
+    </div>
+
+    <!-- SURPRISE VIEW -->
+    <div id="surprise-view" class="view-container hidden">
+        <div class="surprise-content">
+            <h1 class="main-title">Happy Birthday, My Love! 🎂</h1>
+            
+            <!-- Message Card -->
+            <div class="message-card glass-card">
+                <p>Happy Birthday, my love ❤️</p>
+                <p>On this special day, I just want to tell you how much you mean to me. You are the most beautiful part of my life, and every moment with you becomes a memory I never want to lose. Your smile gives me happiness, your care gives me strength, and your love makes my world complete.</p>
+                <p>I pray this year brings you endless joy, success, peace, and all the happiness you truly deserve. No matter what happens, I’ll always be there to support you, protect you, and love you with all my heart.</p>
+                <p>Thank you for being the amazing person you are. You make my life brighter every single day.</p>
+                <p>Once again, Happy Birthday, babb🎂💕<br>I love you more than words can ever explain.</p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/couple_stars.jpg" alt="Our Beautiful Moment 1" onerror="this.src='images/gifts_balloons.jpg'">
+                    <div class="caption">You & Me ✨</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gifts_balloons.jpg" alt="Our Beautiful Moment 2" onerror="this.src='images/couple_stars.jpg'">
+                    <div class="caption">Endless Joy 💖</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/couple_stars.jpg" alt="Our Beautiful Moment 3" onerror="this.src='images/gifts_balloons.jpg'">
+                    <div class="caption">Sweet Memories 📸</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gifts_balloons.jpg" alt="Our Beautiful Moment 4" onerror="this.src='images/couple_stars.jpg'">
+                    <div class="caption">My World 🌎</div>
+                </div>
+            </div>
+            
+            <button id="replay-btn" class="cute-btn">Show Confetti Again! 🎉</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bday-audio" loop>
+        <source src="https://res.cloudinary.com/dfwkgtswr/video/upload/v1779850190/Neeyae_l4o7wt.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
